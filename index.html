@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <section id = "navbar">
-   </section>
+    <nav id="navbar">
+        <div class="nav-wrapper" style="background-color: white;">
+          <a href="#" class="brand-logo" style="color:black">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html" style="color:black">Sass</a></li>
+            <li><a href="badges.html" style="color:black">Components</a></li>
+            <li><a href="collapsible.html" style="color:black">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
 
     <section id = "welcome">
         <div class="parallax-container">
-            <div class="parallax"><img src=""></div>
-            <h1>Welcome!</h1>
+            <div class="parallax"><img src="./resources/welcome.jpg"></div>
+            <h1 class="title">Welcome!</h1>
         </div>
     </section>
     <section id="projects">
     <h3 class="project-title">Titles</h3>
     </section>
 </body>
+
+    </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, 0);
+  });</script>
 </html>
